@@ -1,9 +1,49 @@
-<header>
-    <h1>{{pageTitle}}</h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-        </ul>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Content starts here -->
+    <div class="row">
+        <div class="col col-md-12">
+            <nav class="navbar navbar-expand navbar-dark bg-primary">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                         alt="">
+                    Bootstrap
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <header>
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                </video>
+                <div class="container h-100">
+                    <div class="d-flex h-100 text-center align-items-center">
+                        <div class="w-100 text-white">
+                            <h1 class="display-3">{{pageTitle}}</h1>
+                            <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
